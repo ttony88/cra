@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Rating from './Components/Rating';
-import Accordion from './Components/Accordion';
+import Rating from './Components/Rating/Rating';
+import Accordion from './Components/Accordion/Accordion';
 import { OnOff } from './Components/OnOff/OnOff';
 
 function App() {

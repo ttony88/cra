@@ -25,21 +25,22 @@ type StarPropsType = {
 }
 
 function Star(props: StarPropsType) {
-
+ 
     const onClickHandler = () => props.assignValueCreator()
 
-    if(props.selected === true){
-
-        return(
-            <span onClick={onClickHandler}><b>star</b></span>
-        )
+    const starSelectedStyle = {
+        fontWeight: 900,
     }
 
-	return(
-		<span onClick={onClickHandler}>
-			star
-		</span>
-	)
+    const starStyle = {
+        fontWeight: 400,
+    }
+
+    return(
+        <span onClick={onClickHandler} style={props.selected ? starSelectedStyle: starStyle}>
+            star
+        </span>
+    )
 }
 
 export default Rating
